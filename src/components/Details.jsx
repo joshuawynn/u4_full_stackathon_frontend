@@ -24,16 +24,18 @@ const Details = () => {
 
     const addReview = async () => {
         try {
-            await Client.post(`/rides/${id}/reviews`, review);
-            fetchRide();
+            await Client.post(`/reviews/rides/${id}`, review)
+            .then((res)=>{
+                fetchRide()
+            })
         } catch (error) {
             console.error("Error adding review:", error);
         }
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        addReview(review)
+        addReview()
+
     }
 
     useEffect(() => {
