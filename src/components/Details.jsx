@@ -40,6 +40,7 @@ const Details = () => {
         fetchRide()
     }, [id])
 
+
     return rides ? (
         <div>
             <div className='ride'>
@@ -72,7 +73,6 @@ const Details = () => {
                     {rides.reviews.map(review => (
                         <div>
                             <p>{review.content}</p>
-                            <p>hi</p>
                         </div>
                     ))}
                 </div>
