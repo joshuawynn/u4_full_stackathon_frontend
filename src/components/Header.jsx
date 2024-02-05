@@ -4,14 +4,13 @@ const Header = () => {
     return (
         <header>
             <Link to="/">
-                <h2>Seven Flags</h2>
+                <h2 className="logo">Seven Flags</h2>
             </Link>
             <Link to="/rides">
-                <h3>Explore</h3>
+                <h4>Explore</h4>
             </Link>
         </header>
     )
 }
 
 export default Header
-
