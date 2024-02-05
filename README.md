@@ -35,3 +35,4 @@ Seven Flags is a full stack application that allows users to view rollercoasters
 
 
 **_Credits_**
+[Home Page image](https://i.imgur.com/ek0Jum6.jpg)

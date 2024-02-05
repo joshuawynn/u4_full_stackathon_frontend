@@ -30,9 +30,10 @@ const Details = (props) => {
     }, [id])
 
     return rides ? (
-        <div>
-            <div className='ride'>
-                <h1>Ride Details</h1>
+        <div className='detail'>
+            <div className='detail-header'>
+
+                <h1>Ride Details:</h1>
                 <h2>{rides.title}</h2>
                 <p>{rides.description}</p>
             </div>

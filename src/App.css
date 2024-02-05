@@ -25,10 +25,13 @@ a {
   color: inherit;
 }
 
+.detail {
+  min-height: 35em;
+  justify-content: space-between;
+}
 
 .detail-header {
   width: 100vw;
-  background-color: rgb(175, 181, 202);
   justify-content: center;
   color: rgb(36, 47, 85);
 }
