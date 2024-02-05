@@ -9,7 +9,7 @@ const Details = () => {
     const [rides, setRides] = useState('');
 
     const [review, setReview] = useState({
-        // rating: '5',
+        rating: '5',
         content: ''
     })
 
@@ -46,18 +46,22 @@ const Details = () => {
                 <h1>Ride Details</h1>
                 <h2>{rides.title}</h2>
                 <p>{rides.description}</p>
+                <p>{rides.waitTime}</p>
+                <p>{rides.rideDuration}</p>
+                <p>{rides.rideHeight}</p>
+                <p>{rides.rideSpeed}</p>
             </div>
             <div className='reviews-container'>
                 <h3>Reviews</h3>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor='rating'>Rating:</label>
-                    {/* <select name="rating" id="rating">
+                    <select name="rating" id="rating">
                         <option value="5">5</option>
                         <option value="4">4</option>
                         <option value="3">3</option>
                         <option value="2">2</option>
                         <option value="1">1</option>
-                    </select> */}
+                    </select>
                     <br />
                     <input type="text" name="content" id="content" onChange={handleChange}/>
                     <button type='submit'>Post</button>
