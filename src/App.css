@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   width: 100vw;
   box-sizing: border-box;
@@ -83,3 +82,36 @@ ul {
   margin-bottom: 24px;
 }
 
+/* RIDE DETAILS */
+
+.ride-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 47, 85);
+  color: white;
+  padding: 16px;
+  min-width: 50vmin;
+  margin-bottom: 32px;
+  text-align: left;
+  gap: 16px
+}
+
+
+
+.data {
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.data-title {
+  font-weight:400;
+  margin-bottom: 0;
+}
+
+.details-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
