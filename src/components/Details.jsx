@@ -73,6 +73,7 @@ const Details = () => {
                     {rides.reviews.map(review => (
                         <div>
                             <p>{review.content}</p>
+                            <p>{review.rating}</p>
                         </div>
                     ))}
                 </div>
