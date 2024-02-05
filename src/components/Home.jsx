@@ -1,6 +1,8 @@
 const Home = () => {
     return (
         <div>
+            <div className="home">
+        <div>
             <div>
                 <img className="home-img" src="https://i.imgur.com/ek0Jum6.jpg" alt="amusement park"></img>
                 <div className="container home-info">
@@ -17,9 +19,14 @@ const Home = () => {
             <div>
                 <h2>Park Hours:</h2>
                 <p>8am to 10pm</p>
+                <h2>Address:</h2>
+                <p>42 Wallaby Way</p>
+                <p>Sydney NSW 2000</p>
+                <p>Australia</p>
             </div>
         </div>
-
+        </div>
+        </div>
     )
 }
 

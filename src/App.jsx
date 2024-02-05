@@ -14,8 +14,8 @@ function App() {
   useEffect(() => {
     const getRides = async () => {
       let res = await Client.get('/rides')
-      console.log(res.data)
       setRides(res.data)
+      console.log(res.data)
     }
     getRides();
   }, [])
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      < Header />
       <main>
         <Routes>
           <Route path='/' element={<Home />} />

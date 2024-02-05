@@ -1,11 +1,16 @@
+import { Link } from 'react-router-dom'
+
 const Rides = ({rides}) => {
+
     return (
-        <div>
+        <div className="ride-grid">
             <h1>Rides</h1>
             {rides.map(ride => (
-                <div key={ride.id}>
-                    <h2>{ride.name}</h2>
-                    <h3>{ride.wait_time}</h3>
+                <div className="ride-card" key={ride.id}>
+                    <Link to={`${ride._id}`}>
+                        <h2>{ride.title}</h2>
+                    </Link>
+                    <h3>{ride.waitTime}</h3>
                 </div>
             ))}
         </div>
