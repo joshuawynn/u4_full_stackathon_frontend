@@ -15,6 +15,7 @@ function App() {
     const getRides = async () => {
       let res = await Client.get('/rides')
       setRides(res.data)
+      console.log(res.data)
     }
     getRides();
   }, [])
