@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './components/Header'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
@@ -20,18 +21,13 @@ function App() {
 
   return (
     <div>
-      <header>
-
-      </header>
+      <Header />
       <main>
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/rides' element={<Rides rides={rides}/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/rides' element={<Rides rides={rides}/>} />
         </Routes>
       </main>
-      <footer>
-
-      </footer>
     </div>
   )
 }
