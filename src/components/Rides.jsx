@@ -6,7 +6,6 @@ const Rides = ({rides}) => {
                 <div key={ride.id}>
                     <h2>{ride.name}</h2>
                     <h3>{ride.wait_time}</h3>
-                    <h3>{ride.description}</h3>
                 </div>
             ))}
         </div>

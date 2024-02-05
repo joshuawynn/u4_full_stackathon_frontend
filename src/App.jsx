@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Rides from './components/Rides'
 import Client from './services/api.js'
+import Details from './components/Details'
 
 function App() {
 
@@ -21,13 +22,18 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <header>
+      </header>
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/rides' element={<Rides rides={rides}/>} />
+          <Route path='/rides/:id' element={<Details rides={rides}/>} />
         </Routes>
       </main>
+      <footer>
+        
+      </footer>
     </div>
   )
 }
