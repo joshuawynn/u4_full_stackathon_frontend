@@ -34,7 +34,7 @@ const Details = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         addReview(review)
-    } 
+    }
 
     useEffect(() => {
         fetchRide()
@@ -42,16 +42,28 @@ const Details = () => {
 
 
     return rides ? (
-        <div>
+        <div className='details-container'>
             <div className='ride'>
-                <h1>Ride Details</h1>
                 <img src={rides.picture} alt={rides.title}/>
+                <div className='ride-data'>
+                    <div>
+                        <p className='data-title'>Speed:</p>
+                        <p className='data'>{rides.rideSpeed}</p>
+                    </div>
+                    <div>
+                        <p className='data-title'>Height:</p>
+                        <p className='data'>{rides.rideHeight}</p>
+                    </div>
+                    <div>
+                        <p className='data-title'>Length:</p>
+                        <p className='data'>{rides.rideDuration}</p>
+                    </div>
+                </div>
                 <h2>{rides.title}</h2>
-                <p>{rides.description}</p>
+                <h5>{rides.description}</h5>
+                <h5>Wait Time:</h5>
                 <p>{rides.waitTime}</p>
-                <p>{rides.rideDuration}</p>
-                <p>{rides.rideHeight}</p>
-                <p>{rides.rideSpeed}</p>
+
             </div>
             <div className='reviews-container'>
                 <h3>Reviews</h3>
@@ -65,7 +77,7 @@ const Details = () => {
                         <option value="1">1</option>
                     </select>
                     <br />
-                    <input type="text" name="content" id="content" onChange={handleChange}/>
+                    <input type="text" name="content" id="content" onChange={handleChange} />
                     <button type='submit'>Post</button>
                 </form>
 
