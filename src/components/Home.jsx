@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <div>HOME PAGE</div>
+        <div>Welcome to Seven Flags!</div>
     )
 }
 
