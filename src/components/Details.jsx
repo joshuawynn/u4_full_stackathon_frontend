@@ -44,6 +44,7 @@ const Details = () => {
         <div>
             <div className='ride'>
                 <h1>Ride Details</h1>
+                <img src={rides.picture} alt={rides.title}/>
                 <h2>{rides.title}</h2>
                 <p>{rides.description}</p>
                 <p>{rides.waitTime}</p>
@@ -75,7 +76,7 @@ const Details = () => {
                         </div>
                     ))}
                 </div>
-             </div>
+            </div>
         </div>
     ) : null
 }
