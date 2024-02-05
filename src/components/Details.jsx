@@ -12,8 +12,8 @@ const Details = () => {
     }, [])
 
     return (
-        <div>
-            <h1>Ride Details</h1>
+        <div className='detail'>
+            <h1 className='detail-header'>Ride Details</h1>
             <h2>{rides.description}</h2>
             <h3>{rides.image}</h3>
         </div>
