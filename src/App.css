@@ -9,7 +9,7 @@ header {
   display: flex;
   gap: 32px;
   align-items: center;
-  padding: 16px
+  padding: 16px;
 }
 
 main {
@@ -30,7 +30,7 @@ a {
   width: 100vw;
   background-color: rgb(175, 181, 202);
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(36, 47, 85);
 }
 
 .navbar {
@@ -45,6 +45,7 @@ a {
 
 .ride-grid {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
