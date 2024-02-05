@@ -6,12 +6,12 @@ const Rides = ({rides}) => {
         <div className="ride-grid">
             <h1>Rides</h1>
             {rides.map(ride => (
+                <Link to={`${ride._id}`}>
                 <div className="ride-card" key={ride.id}>
-                    <Link to={`${ride._id}`}>
                         <h2>{ride.title}</h2>
-                    </Link>
                     <h3>{ride.waitTime}</h3>
                 </div>
+                </Link>
             ))}
         </div>
     )
