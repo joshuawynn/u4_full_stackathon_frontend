@@ -1,5 +1,10 @@
 const Home = () => {
     return (
+
+        <div className="home">
+            Welcome to Seven Flags!
+        </div>
+
         <div>
             <div>
                 <img className="home-img" src="https://i.imgur.com/ek0Jum6.jpg" alt="amusement park"></img>
@@ -19,6 +24,7 @@ const Home = () => {
                 <p>8am to 10pm</p>
             </div>
         </div>
+
 
     )
 }
