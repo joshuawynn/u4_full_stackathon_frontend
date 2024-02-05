@@ -1,21 +1,30 @@
 #root {
   max-width: 1280px;
   margin: 0;
-  padding: 2rem;
-  text-align: center;
   width: 100vw;
+  box-sizing: border-box;
 }
 
 header {
   display: flex;
   gap: 32px;
   align-items: center;
+  padding: 16px
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 .detail-header {
   width: 100vw;
@@ -57,3 +66,19 @@ a {
 .ride-card:hover {
   transform: scale(1.01);
 }
+
+.container {
+  width: 60vmin;
+}
+
+ul {
+  text-align: left;
+}
+
+/* HOME PAGE */
+
+.home-img {
+  width: 60vmin;
+  margin-bottom: 24px;
+}
+
