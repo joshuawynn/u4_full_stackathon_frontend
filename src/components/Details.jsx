@@ -40,9 +40,11 @@ const Details = () => {
         fetchRide()
     }, [id])
 
+
     return rides ? (
         <div className='details-container'>
             <div className='ride'>
+                <img src={rides.picture} alt={rides.title}/>
                 <div className='ride-data'>
                     <div>
                         <p className='data-title'>Speed:</p>
@@ -83,7 +85,6 @@ const Details = () => {
                     {rides.reviews.map(review => (
                         <div>
                             <p>{review.content}</p>
-                            <p>hi</p>
                         </div>
                     ))}
                 </div>
