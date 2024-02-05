@@ -1,6 +1,8 @@
 const Home = () => {
     return (
-        <div>Welcome to Seven Flags!</div>
+        <div className="home">
+            Welcome to Seven Flags!
+        </div>
     )
 }
 
