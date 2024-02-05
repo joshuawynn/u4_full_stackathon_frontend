@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
     const getRides = async () => {
       let res = await Client.get('/rides')
+      console.log(res.data)
       setRides(res.data)
     }
     getRides();
@@ -27,7 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/rides' element={<Rides rides={rides}/>} />
-          <Route path='/rides/show' element={<Details rides={rides}/>} />
+          <Route path='/rides/:id' element={<Details rides={rides}/>} />
         </Routes>
       </main>
       <footer>
