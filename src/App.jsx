@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
     const getRides = async () => {
       let res = await Client.get('/rides')
+      console.log(res)
       setRides(res.data)
     }
     getRides();
