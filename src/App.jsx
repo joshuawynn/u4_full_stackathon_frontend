@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      < Header />
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
