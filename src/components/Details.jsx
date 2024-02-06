@@ -24,16 +24,18 @@ const Details = () => {
 
     const addReview = async () => {
         try {
-            await Client.post(`/rides/${id}/reviews`, review);
-            fetchRide();
+            await Client.post(`/reviews/rides/${id}`, review)
+            .then((res)=>{
+                fetchRide()
+            })
         } catch (error) {
             console.error("Error adding review:", error);
         }
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        addReview(review)
+        addReview()
+
     }
 
     useEffect(() => {
@@ -67,6 +69,7 @@ const Details = () => {
             </div>
             <div className='reviews-container'>
                 <h3>Reviews</h3>
+                <br />
                 <form onSubmit={handleSubmit}>
                     <label htmlFor='rating'>Rating:</label>
                     <select name="rating" id="rating">
@@ -76,16 +79,19 @@ const Details = () => {
                         <option value="2">2</option>
                         <option value="1">1</option>
                     </select>
-                    <br />
                     <input type="text" name="content" id="content" onChange={handleChange} />
                     <button type='submit'>Post</button>
                 </form>
-
+                <br />
+                <br />
                 <div className='reviews'>
                     {rides.reviews.map(review => (
                         <div>
                             <p>{review.content}</p>
+                            <p>rating: {review.rating}</p>
+                            <hr />
                             <p>{review.rating}</p>
+
                         </div>
                     ))}
                 </div>
