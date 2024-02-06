@@ -8,8 +8,12 @@ const Rides = ({rides}) => {
             {rides.map(ride => (
                 <Link to={`${ride._id}`}>
                 <div className="ride-card" key={ride.id}>
+                    <img src={ride.picture} alt={ride.title} />
                         <h2>{ride.title}</h2>
-                    <h3>{ride.waitTime}</h3>
+                        <div>
+                        <p>Wait Time:</p>
+                        <p>{ride.waitTime}</p>
+                        </div>
                 </div>
                 </Link>
             ))}
