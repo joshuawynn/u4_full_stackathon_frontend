@@ -90,8 +90,6 @@ const Details = () => {
                             <p>{review.content}</p>
                             <p>rating: {review.rating}</p>
                             <hr />
-                            <p>{review.rating}</p>
-
                         </div>
                     ))}
                 </div>
